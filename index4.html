@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>MAIN BROWSER</title>
+        <script>
+            function search()
+            {
+                var url = document.getElementById("url").value;
+                document.getElementById("search").src = url
+            }
+        </script>
+        <style>
+            .resize{
+                width: 50%;
+                height: 60%;
+                position: relative;
+                overflow-y: hidden;
+                resize: both;
+                overflow-x: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1 align ="center">My First sub-window</h1>
+            <hr>
+            <br>
+            <div align = "center" class="resize">
+            <iframe style ="width: 100%; height: 100%;float: inherit" src="https://www.bing.com/"id="search""> abcd</iframe>
+            </div> 
+        </center> 
+        <br>
+        <hr>
+        <br> 
+        <div align = "center">
+            <input id="url" placeholder="https://bing.com/" type="text">
+            <input type="button" value ="Go" onclick="search()"
+        </div>
+        
+    </body>
+</html>
